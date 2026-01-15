@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="dashboard.html" class="nav-item" title="Dashboard">
+            <img src="https://img.icons8.com/ios/50/ffffff/menu--v1.png" alt="Home">
+        </a>
+
+        <a href="index.html" class="nav-item new-ticket" title="Novo Ticket">
+            <img src="https://img.icons8.com/ios/50/ffffff/create-new.png" alt="Novo Chat">
+        </a>
+    </nav>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Assunto</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Urgência</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-tickets">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

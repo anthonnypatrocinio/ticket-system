@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/IndexStyle.css">
+    <title>Novo Ticket</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="dashboard.html" class="nav-item" title="Dashboard">
+            <img src="https://img.icons8.com/ios/50/ffffff/menu--v1.png" alt="Home">
+        </a>
+
+        <a href="index.html" class="nav-item new-ticket" title="Novo Ticket">
+            <img src="https://img.icons8.com/ios/50/ffffff/create-new.png" alt="Novo Chat">
+        </a>
+    </nav>
+    <form id="form-novo-ticket">
+        <div>
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto">
+        </div>
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+        </div>
+        <div>
+            <label for="tipo_problema">Tipo do problema:</label>
+            <select name="tipo_problema" id="tipo_problema">
+                <option value="Incidente">Incidente</option>
+                <option value="Requisição de Serviço">Requisição de Serviço</option>
+            </select>
+        </div>
+        <div>
+            <label for="nivel_urgencia">Nível de Urgência:</label>
+            <select name="nivel_urgencia" id="nivel_urgencia">
+                <option value="Baixo">Baixo</option>
+                <option value="Médio">Médio</option>
+                <option value="Alto">Alto</option>
+                <option value="Muito Alto">Muito Alto</option>
+            </select>
+        </div>
+        <div>
+            <label for="setor">Setor:</label>
+            <input type="text" name="setor" id="setor">
+        </div>
+        <div>
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
+        <div>
+            <button type="submit">Criar</button>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>

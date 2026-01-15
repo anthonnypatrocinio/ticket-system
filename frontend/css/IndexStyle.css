@@ -1,0 +1,186 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    background-color: #0f1011;
+    overflow: hidden; 
+    height: 100vh;
+    margin: 0;
+}
+
+/*Nav*/
+/* Ajuste para o conteúdo do site não ficar escondido atrás da barra */
+body {
+    padding-left: 80px; /* Empurra o site para a direita */
+    margin: 0; /* Garante que a sidebar encoste no canto */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 72px;
+    
+    background-color: rgb(30, 31, 32);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    
+    z-index: 1000;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.nav-item.new-ticket:hover {
+    background-color: rgb(40, 42, 44);
+}
+
+.nav-item.new-ticket:hover {
+    background-color: rgb(55, 57, 59);
+}
+/*Nav*/
+
+/* Scrollbar Customizada */
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: rgb(33, 33, 33); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background-color: #555; border-radius: 10px; border: 2px solid rgb(33, 33, 33); }
+::-webkit-scrollbar-thumb:hover { background-color: #777; }
+* { scrollbar-width: thin; scrollbar-color: #555 rgb(33, 33, 33); }
+
+/* Scrollbar Customizada */
+
+#form-novo-ticket {
+    width: 80vw;
+    height: 85vh;
+    margin: 5vh auto;
+    
+    background-color:#202124;
+;
+    border-radius: 10px;
+    padding: 25px 40px;
+    
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+#form-novo-ticket div {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(214, 214, 214);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    
+    background-color: rgb(24, 24, 24); 
+    border: 1px solid #444;
+    border-radius: 5px;
+    
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #666;
+    color: #fff;
+}
+
+/*Select Escuro*/
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: rgb(24, 24, 24);
+    color: grey;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 12px 15px;
+    
+    padding-right: 40px; 
+    
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='grey' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+/*Select Escuro*/
+
+select:focus {
+    border-color: #666;
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    
+    background: linear-gradient(rgb(44, 44, 44), rgb(50, 50, 50));
+    color: rgb(219, 219, 219);
+    
+    border: none;
+    border-radius: 5px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(rgb(44, 44, 44), rgb(62, 62, 62));
+    transform: translateY(-3px);
+    color: #fff;
+}
